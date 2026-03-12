@@ -1,0 +1,343 @@
+﻿@model FormWebApplication.Models.PersonalModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    .Containerx {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Form-Card {
+        
+        width: 65%;
+        border: 0.5px solid black;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        margin-top: 60px;
+        
+    }
+
+   .form-data{
+        padding-left: 30px;
+    }
+
+
+    .mbx {
+    margin-bottom: 1.15rem;
+    
+}
+    .header {
+        background-color: #ffa100;
+        color: white;
+        border-radius: 2px;
+    }
+    button.btn.btn-success.btn-sm {
+        margin-bottom: 10px;
+        width: 58%;
+    }
+</style>
+
+
+
+<div class="Containerx">
+    
+    <div class="Form-Card">
+        <div class="header">
+            <h3 class=" text-center">Registration Form</h3>
+        </div>
+       
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+            <div class="form-data">
+                @* <-- first name --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">First Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <-- Last name --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">Last Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                @* <-- Dob name --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">D.O.B</label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="Dob" type="date" class="form-control" />
+                        <span asp-validation-for="Dob" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <-- Photo  --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">Photo</label>
+                    </div>
+                    <div class="col-9">
+                        <input asp-for="PhotoFile" type="file" class="form-control" />
+                        <span asp-validation-for="PhotoFile" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <-- Gender  --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">Photo</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-check form-check-inline">
+                            <input asp-for="Gender" class="form-check-input" type="radio" value="Male" />
+                            <label class="form-check form-check-inline">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input asp-for="Gender" class="form-check-input" type="radio" value="Female" />
+                            <label class="form-check form-check-inline">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input asp-for="Gender" class="form-check-input" type="radio" value="Other" />
+                            <label class="form-check form-check-inline">Other</label>
+                        </div>
+                        <br />
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <-- Category  --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">Category</label>
+                    </div>
+                    <div class="col-6">
+                        <select asp-for="Category" type="text" class="form-control">
+                            <option value="">-- Select Category --</option>
+                            <option value="Student">General</option>
+                            <option value="Employee">OBC</option>
+                            <option value="Other">SC/ST</option>
+                        </select>
+                        <span asp-validation-for="Category" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <-- Photo  --> *@
+                <div class="form-group row mbx">
+                    <div class="col-2">
+                        <label class="control-label">Status</label>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check form-switch">
+                            <input asp-for="Status" class="form-check-input" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <h4 class="text-center">Qualification Documents</h4>
+            <table class="table table-bordered text-center" id="Mytable">
+                <thead>
+                    <tr>
+                        <th>Stream</th>
+                        <th>File</th>
+                        <th>Remarks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>
+                            <select name="Details[0].Stream" class="form-control d-Stream">
+                                <option value=""></option>
+                                <option>10th Marksheet</option>
+                                <option>12th Marksheet</option>
+                                <option>Graduation</option>
+                                
+                            </select>
+                            <span asp-validation-for="Details[0].Stream" class="text-danger"></span>
+                        </td>
+                        <td>
+                            <input name="Details[0].File" type="file" class="form-control d-File" />
+                            
+                        </td>
+                        <td>
+                            <input name="Details[0].Remarks" type="text" class="form-control d-Remarks" />
+                            
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success btn-sm w-100" onclick="addRow()">
+                                + Add
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            <div class="text-center mt-3 mb-3">
+                <button class="btn btn-primary"  type="submit">Submit</button>
+            </div>
+            
+         
+        </form>
+         
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+             <text>
+                        Swal.fire({
+                        icon: 'success',
+                        title: 'Good job!',
+                        text: @Html.Raw(
+                        System.Text.Json.JsonSerializer.Serialize(TempData["SuccessMessage"])
+            )
+                });
+            </text>
+                }
+
+        });
+    </script>
+
+    
+    <script>
+        var index = $('#tbody tr').length;
+
+        function addRow(){
+            
+            var row = `<tr>
+                        <td>
+                            <select name="Details[${index}].Stream" class="form-control d-Stream">
+                                <option value=""></option>
+                                <option>10th Marksheet</option>
+                                <option>12th Marksheet</option>
+                                <option>Graduation</option>
+
+                            </select>
+                          
+                        </td>
+                        <td>
+                            <input name="Details[${index}].File" type="file" class="form-control d-File" />
+                            
+                        </td>
+                        <td>
+                            <input name="Details[${index}].Remarks" type="text" class="form-control d-Remarks" />
+                           
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm w-100" onclick="removeRow(this)">Remove</button>
+                        </td>
+                    </tr>`;
+            $(`#tbody`).append(row);
+            index++;
+            
+        }
+
+        function removeRow(button){
+             $(button).closest('tr').remove();
+             reIndexRows();
+        }
+
+        
+
+
+         function reIndexRows(){
+                $('#tbody tr').each(function(i, row){
+                    $(row).find('.d-Stream').attr('name', `Details[${i}].Stream`);
+                    $(row).find('.d-File').attr('name', `Details[${i}].File`);
+                    $(row).find('.d-Remarks').attr('name', `Details[${i}].Remarks`);
+                });
+                index = $('#tbody tr').length;
+          }  
+    </script>
+
+
+
+
+    <script>
+        $('form').on('submit', function (e) {
+            e.preventDefault();
+
+            let DetailsValid = true;
+
+            // Stream validation
+            $('.d-Stream').each(function () {
+                if ($(this).val().trim() === '') {
+                    DetailsValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+
+            // File validation
+            $('.d-File').each(function () {
+                if (!this.files || this.files.length === 0) {
+                    DetailsValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+
+            // Stop submission if invalid
+            if (!DetailsValid) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Validation Error',
+                    text: 'Please fill all the qualification details properly'
+                });
+                return;
+            }
+
+            // Confirmation alert
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'Do you want to submit this form?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#28a745',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, Submit'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $('form')[0].submit(); 
+                }
+            });
+        });
+    </script>
+   
+
+    
+
+    
+}
+
