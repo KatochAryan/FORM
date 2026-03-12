@@ -1,0 +1,264 @@
+﻿@model StudentRegistrationPortal.Models.StudentModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit Student";
+}
+
+<style>
+    .form-select {
+        border-radius: 0 8px 8px 0;
+        padding: 10px 12px;
+        border: 1px solid #dee2e6;
+    }
+
+        .form-select:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 0 0.15rem rgba(78, 115, 223, 0.25);
+        }
+
+    body {
+        background: linear-gradient(135deg, #f1f4f9, #ffffff);
+        font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    .edit-card {
+        max-width: 850px;
+        margin: 60px auto;
+        background: #ffffff;
+        padding: 35px 40px;
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+        .edit-card h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .edit-card p {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+    label {
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 6px;
+    }
+
+    .input-group-text {
+        background: #f1f3f6;
+        border-radius: 8px 0 0 8px;
+        border: 1px solid #dee2e6;
+    }
+
+    .form-control {
+        border-radius: 0 8px 8px 0;
+        padding: 10px 12px;
+        border: 1px solid #dee2e6;
+    }
+
+        .form-control:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 0 0.15rem rgba(78, 115, 223, 0.25);
+        }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #4e73df, #224abe);
+        border: none;
+        border-radius: 10px;
+        padding: 14px;
+        font-size: 17px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #375bd2, #1b3ca3);
+        }
+
+    .photo-box {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 2px dashed #cbd5e1;
+        margin: auto;
+        overflow: hidden;
+    }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .file-label {
+        background: #4e73df;
+        color: #fff;
+        padding: 6px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+        .file-label input {
+            display: none;
+        }
+
+</style>
+
+<div class="edit-card">
+    <h3>Edit Student Profile</h3>
+    <p>Update student academic & personal information</p>
+
+    <form asp-action="Update"
+          asp-controller="StudentErp"
+          method="post"
+          enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="id" />
+
+        <div class="row g-4">
+            <div class="text-center mb-4">
+                <div class="photo-box">
+                    <img id="photoPreview"
+                         src="@Model.PhotoPath"
+                         style="display:@(!string.IsNullOrEmpty(Model.PhotoPath) ? "block" : "none")" />
+
+                </div>
+
+                <label class="file-label mt-2">
+                    Change Photo
+                    <input type="file"
+                           asp-for="Photo"
+                           accept=".jpg,.jpeg,.png"
+                           onchange="previewImage(this)" />
+                </label>
+            </div>
+
+            <div class="col-md-6">
+                <label>Student Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    <input asp-for="StudentName" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Date of Birth</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                    <input type="text" asp-for="Dob" id="dob" placeholder="DD/MM/YYYY"  class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Mobile</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                    <input asp-for="Mobile" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Course</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-book"></i></span>
+                        <select asp-for="Course" class="form-select">
+                            <option value="">Select</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>B.Tech</option>
+                            <option>M.Tech</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Father Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-user-tie"></i></span>
+                    <input asp-for="FatherName" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Mother Name</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    <input asp-for="MotherName" class="form-control" />
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-6">
+                <label>Semester</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-layer-group"></i></span>
+                    <select asp-for="Semester" class="form-select">
+                        <option value="">Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label>Admission Year</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa fa-school"></i></span>
+                    <input asp-for="Admission_Year" class="form-control" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="fa fa-save me-2"></i> Update Profile
+            </button>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    flatpickr("#dob", {
+                        dateFormat: "d/m/Y",   // DD/MM/YYYY
+                        maxDate: "today",
+                        allowInput: true
+                    });
+                });
+    </script>
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById("photoPreview");
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = e => {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+}

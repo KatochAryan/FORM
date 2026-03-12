@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    @RenderSection("Styles", required: false)
+
+
+    <style>
+
+        .sidebar-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1045;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+            .sidebar-overlay.show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+      
+
+        body {
+            background: #f4f6f9;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            min-height: 100dvh; 
+            background: #1f2937;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease;
+            z-index: 1050;
+            overflow-y: auto;
+        }
+
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .sidebar a {
+                color: #cbd5e1;
+                text-decoration: none;
+                padding: 12px 20px;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    background: #374151;
+                    color: #fff;
+                }
+
+            .sidebar .brand {
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                padding: 20px;
+                border-bottom: 1px solid #374151;
+            }
+
+        /* Main */
+        .main {
+            margin-left: 250px;
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Navbar */
+        .topbar {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 20px;
+        }
+
+        /* Content */
+        .content {
+            padding: 25px;
+        }
+
+        @@media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+                .sidebar.show {
+                    transform: translateX(0);
+                }
+
+            .main {
+                margin-left: 0;
+            }
+        }
+
+        body.sidebar-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="brand">Admin Panel</div>
+        <a asp-controller="Home" asp-action="Index"><i class="bi bi-speedometer2"></i> Dashboard</a>
+        <a asp-controller="Admin" asp-action="Users"><i class="bi bi-people"></i> Users</a>
+        <a asp-controller="Admin" asp-action="Students"><i class="bi bi-mortarboard"></i> Students</a>
+        <a asp-controller="Admin" asp-action="Courses"><i class="bi bi-book"></i> Courses</a>
+        <a asp-controller="Admin" asp-action="Reports"><i class="bi bi-bar-chart"></i> Reports</a>
+        <a asp-controller="Admin" asp-action="Settings"><i class="bi bi-gear"></i> Settings</a>
+        <a asp-controller="Home" asp-action="Logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+    </div>
+
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Top Navbar -->
+        <div class="topbar d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-secondary d-md-none" input-group
+                    onclick="toggleSidebar()">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <h5 class="mb-0">@ViewData["Title"]</h5>
+
+            <div>
+                <i class="bi bi-bell me-3"></i>
+                <strong>Admin</strong>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Sidebar Toggle Script -->
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            const body = document.body;
+
+            sidebar.classList.toggle('show');
+            overlay.classList.toggle('show');
+            body.classList.toggle('sidebar-open');
+        }
+                document.querySelectorAll('.sidebar a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleSidebar();
+                }
+            });
+        });
+
+    </script>
+
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+
+
+
+</html>

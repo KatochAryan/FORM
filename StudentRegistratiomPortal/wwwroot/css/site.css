@@ -1,0 +1,222 @@
+/* =========================
+   BASE / BOOTSTRAP FIXES
+========================= */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Bootstrap focus fix */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #fff, 0 0 0 0.25rem #258cfb;
+}
+
+/* =========================
+   LOGIN LAYOUT
+========================= */
+.login-wrapper {
+    width: 90%;
+    max-width: 960px;
+    height: 520px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.login-row {
+    display: flex;
+    height: 100%;
+}
+
+/* =========================
+   LEFT PANEL
+========================= */
+.login-left {
+    width: 45%;
+    background: #0d6efd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.login-left h4 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BIG BUTTONS
+========================= */
+.big-option {
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+    .big-option i {
+        font-size: 34px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .big-option span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .big-option:hover {
+        background: #fff;
+        color: #0d6efd;
+        transform: translateY(-4px);
+    }
+
+    .big-option:active {
+        transform: scale(0.97);
+    }
+
+    .big-option.active {
+        background: #fff;
+        color: #0d6efd;
+        transform: scale(1.03);
+    }
+
+/* =========================
+   RIGHT PANEL
+========================= */
+.login-right {
+    width: 55%;
+    padding: 45px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .login-right h3 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+/* =========================
+   FORMS
+========================= */
+.form-box {
+    display: none;
+    width: 100%;
+    animation: fadeSlide 0.4s ease;
+}
+
+    .form-box.active {
+        display: block;
+    }
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+    .form-control:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.15rem rgba(13,110,253,.25);
+    }
+
+.btn-primary {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+.forgot-link {
+    font-size: 13px;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+    .forgot-link:hover {
+        text-decoration: underline;
+    }
+
+/* =========================
+   MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+    .login-wrapper {
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .login-row {
+        flex-direction: column;
+    }
+
+    .login-left {
+        width: 100%;
+        padding: 24px 16px;
+        gap: 16px;
+    }
+
+        .login-left h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+    .big-option {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+        .big-option i {
+            font-size: 26px;
+        }
+
+    .login-right {
+        width: 100%;
+        padding: 24px 16px;
+        display: block;
+    }
+
+        .login-right h3 {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+    .btn-primary {
+        width: 100%;
+    }
+}

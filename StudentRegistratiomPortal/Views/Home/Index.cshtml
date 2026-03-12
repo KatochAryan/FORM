@@ -1,0 +1,48 @@
+﻿@model List<StudentModel>
+<table class="tableorg">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Father Name</th>
+            <th>Mother Name</th>
+            <th>Course</th>
+            <th>CGPA</th>
+            <th>Semester</th>
+            <th>Admission Year</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StudentName</td>
+                <td>@item.Student_Email</td>
+                <td>@item.FatherName</td>
+                <td>@item.MotherName</td>
+                <td>@item.Course</td>
+                <td>@item.CGPA</td>
+                <td>@item.Semester</td>
+                <td>@item.Admission_Year</td>
+
+                <td>
+                    <a asp-controller="StudentErp"
+                       asp-action="Update"
+                       asp-route-id="@item.id"
+                       class="btn btn-sm btn-primary">
+                        Edit
+                    </a>
+
+                    <a asp-controller="StudentErp"
+                       asp-action="Delete"
+                       asp-route-id="@item.id"
+                       class="btn btn-sm btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

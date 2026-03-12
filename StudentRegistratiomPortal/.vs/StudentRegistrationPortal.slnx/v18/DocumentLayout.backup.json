@@ -1,0 +1,367 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\controllers\\studenterpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:controllers\\studenterpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\areas\\admin\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:areas\\admin\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\studenterp\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\studenterp\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\areas\\admin\\views\\home\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:areas\\admin\\views\\home\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\models\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:models\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\models\\chatmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:models\\chatmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\studenterp\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\studenterp\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\models\\adminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:models\\adminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\views\\studenterp\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:views\\studenterp\\verifyotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|e:\\dotnet\\mvc(model,view,controller)\\studentregistratiomportal\\studentregistrationportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEAC5C2F-A3C8-AE9E-8BB7-6FC99B714D37}|StudentRegistrationPortal.csproj|solutionrelative:studentregistrationportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T10:54:33.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "ViewState": "AgIAAHEAAAAAZ2ZmZmY6wHIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:53:09.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-02T08:04:57.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatbotController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAgAAABAMzMzMzM/wCgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T12:29:19.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\AdminModel.cs",
+              "RelativeDocumentMoniker": "Models\\AdminModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\AdminModel.cs",
+              "RelativeToolTip": "Models\\AdminModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T07:17:54.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChatModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\ChatModel.cs",
+              "RelativeDocumentMoniker": "Models\\ChatModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\ChatModel.cs",
+              "RelativeToolTip": "Models\\ChatModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T07:17:45.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-30T07:12:04.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_navbar.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_navbar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_navbar.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_navbar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_navbar.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T07:59:41.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentErp\\Create.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\Create.cshtml",
+              "RelativeToolTip": "Views\\StudentErp\\Create.cshtml",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAqwFgBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T07:59:36.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAABQBAAAAAAAAAAAAAC0BAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T07:53:22.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VerifyOtp.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\VerifyOtp.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentErp\\VerifyOtp.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\VerifyOtp.cshtml",
+              "RelativeToolTip": "Views\\StudentErp\\VerifyOtp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T06:04:33.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQBAAAAAAAAAAAAACkBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T06:03:41.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\Update.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentErp\\Update.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\StudentErp\\Update.cshtml",
+              "RelativeToolTip": "Views\\StudentErp\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T06:03:18.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\StudentModel.cs",
+              "RelativeDocumentMoniker": "Models\\StudentModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Models\\StudentModel.cs",
+              "RelativeToolTip": "Models\\StudentModel.cs",
+              "ViewState": "AgIAAAkAAAAgMzMzMzMzwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T05:18:06.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBAwBAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T05:16:05.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvw4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T13:04:57.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAA4AAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T12:41:59.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentErpController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\StudentErpController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentErpController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Controllers\\StudentErpController.cs",
+              "RelativeToolTip": "Controllers\\StudentErpController.cs",
+              "ViewState": "AgIAAEQBAAAAUDMzMzMDwEgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T12:41:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudentRegistrationPortal.csproj",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\StudentRegistrationPortal.csproj",
+              "RelativeDocumentMoniker": "StudentRegistrationPortal.csproj",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\StudentRegistrationPortal.csproj",
+              "RelativeToolTip": "StudentRegistrationPortal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-28T12:41:14.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABYAAACAZmZmZmYawBMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T12:34:36.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\StudentRegistratiomPortal\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAANkAAAAAZGZmZmYawBAAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T12:31:23.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

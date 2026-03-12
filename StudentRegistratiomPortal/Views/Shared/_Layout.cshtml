@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Student ERP</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            background: #f8fafc;
+        }
+
+        /* ===== SIDEBAR ===== */
+        #sidebar {
+            width: 230px;
+            min-height: 100vh;
+            background: #1e293b;
+            color: #fff;
+            position: fixed;
+            padding: 15px;
+            transition: width 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
+
+            #sidebar.collapsed {
+                width: 70px;
+            }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #sidebar.collapsed .sidebar-title {
+            display: none;
+        }
+
+        #toggleBtn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        /* ===== SEARCH BOX ===== */
+        .sidebar-search-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #334155;
+            padding: 8px 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+            .sidebar-search-box i {
+                color: #cbd5e1;
+                font-size: 14px;
+            }
+
+            .sidebar-search-box input {
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                width: 100%;
+                font-size: 14px;
+            }
+
+                .sidebar-search-box input::placeholder {
+                    color: #94a3b8;
+                }
+
+        #sidebar.collapsed .sidebar-search-box input {
+            display: none;
+        }
+
+        /* ===== MENU ===== */
+        #sidebar ul {
+            padding: 0;
+        }
+
+            #sidebar ul li {
+                list-style: none;
+                margin-bottom: 10px;
+            }
+
+                #sidebar ul li a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    padding: 10px;
+                    border-radius: 6px;
+                }
+
+                    #sidebar ul li a:hover {
+                        background: #334155;
+                        color: #fff;
+                    }
+
+                #sidebar ul li i {
+                    width: 25px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+
+        .link-text {
+            white-space: nowrap;
+        }
+
+        #sidebar.collapsed .link-text {
+            display: none;
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            margin-left: 230px;
+            transition: margin-left 0.3s ease;
+            min-height: 100vh;
+        }
+
+            .content.collapsed {
+                margin-left: 70px;
+            }
+
+        /* ===== MOBILE ===== */
+        .mobile-header {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 56px;
+            background: #1e293b;
+            color: #fff;
+            align-items: center;
+            padding: 0 15px;
+            z-index: 1100;
+        }
+
+            .mobile-header button {
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 22px;
+                margin-right: 15px;
+            }
+
+        @@media (max-width: 768px) {
+            #sidebar {
+                transform: translateX(-100%);
+            }
+
+                #sidebar.mobile-active {
+                    transform: translateX(0);
+                }
+
+            .mobile-header {
+                display: flex;
+            }
+
+            .content {
+                margin-left: 0;
+                padding-top: 56px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MOBILE HEADER -->
+    <div class="mobile-header">
+        <button id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <strong>Student ERP</strong>
+    </div>
+
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Student ERP</span>
+            <button id="toggleBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="sidebar-search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="sidebarSearch" placeholder="Search menu..." />
+        </div>
+
+        <!-- MENU -->
+        <ul id="sidebarMenu">
+            <li>
+                <a asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a asp-controller="StudentErp" asp-action="Update">
+                    <i class="fas fa-user-edit"></i>
+                    <span class="link-text">Your Profile</span>
+                </a>
+            </li>
+
+            @if (Context.Session.GetString("UserRole") == null)
+            {
+                <li>
+                    <a asp-area=""
+                       asp-controller="StudentErp"
+                       asp-action="Login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="link-text">Login</span>
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a asp-area=""
+                       asp-controller="StudentErp"
+                       asp-action="Logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+            }
+
+
+            <li>
+                <a asp-controller="Chatbot" asp-action="Chatbot">
+                    <i class="fas fa-headset"></i>
+                    <span class="link-text">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="content" id="content">
+        <main class="p-4">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const content = document.getElementById("content");
+        const toggleBtn = document.getElementById("toggleBtn");
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        const searchInput = document.getElementById("sidebarSearch");
+
+        toggleBtn.onclick = () => {
+            sidebar.classList.toggle("collapsed");
+            content.classList.toggle("collapsed");
+
+            searchInput.value = "";
+            document.querySelectorAll("#sidebarMenu li")
+                .forEach(li => li.style.display = "");
+        };
+
+        mobileBtn.onclick = () => {
+            sidebar.classList.toggle("mobile-active");
+        };
+
+        searchInput.addEventListener("keyup", function () {
+            const value = this.value.toLowerCase();
+            document.querySelectorAll("#sidebarMenu li").forEach(item => {
+                item.style.display =
+                    item.innerText.toLowerCase().includes(value) ? "" : "none";
+            });
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

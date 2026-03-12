@@ -1,0 +1,128 @@
+﻿@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger text-center">
+        @ViewBag.Error
+    </div>
+}
+
+@{
+    Layout = "_Layout";
+
+    ViewData["Title"] = "Otp Verify";
+}
+<style>
+    body {
+        background: #f4f6f9;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 30px auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+
+    #otpTimer {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #28a745;
+        font-weight: 500;
+    }
+
+    #resendTimer {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #555;
+    }
+
+    #resendBtn {
+        margin: 15px auto 0;
+        display: block;
+        max-width: 400px;
+    }
+</style>
+
+<h2>Verify OTP</h2>
+
+<form asp-action="VerifyOtp" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="text" name="otp" placeholder="Enter OTP" required />
+
+    <button type="submit">Verify OTP</button>
+</form>
+
+<p id="otpTimer"></p>
+
+<button id="resendBtn" disabled onclick="resendOtp()">Resend OTP</button>
+<p id="resendTimer"></p>
+
+<script>
+    const expiryString = "@ViewBag.OtpExpiry";
+
+    if (!expiryString) {
+        document.getElementById("otpTimer").innerText = "OTP expired";
+    } else {
+        const expiryTime = new Date(expiryString).getTime();
+
+        const otpInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const diff = expiryTime - now;
+
+            if (diff <= 0) {
+                clearInterval(otpInterval);
+                document.getElementById("otpTimer").innerText = "OTP expired";
+                return;
+            }
+
+            const minutes = Math.floor(diff / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("otpTimer").innerText =
+                `OTP valid for ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }, 1000);
+    }
+</script>
+
+
