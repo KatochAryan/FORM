@@ -1,0 +1,103 @@
+﻿@model List<Form.Models.UserListViewModel>
+
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<h2 class="mb-4 text-center">Student Records</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle shadow">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th width="302">Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        <img src="@item.Photo"
+                             class="rounded-circle border"
+                             style="width:60px;height:60px;object-fit:cover" />
+                    </td>
+
+                    <td>
+                        <strong>@item.FirstName @item.LastName</strong>
+                    </td>
+
+                    <td>@item.Dob.ToString("dd-MMM-yyyy")</td>
+                    <td>@item.Gender</td>
+                    <td>@item.Category</td>
+                    <td>
+                        <span class="badge bg-success">@item.Status</span>
+                    </td>
+
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id"
+                           class="btn btn-sm btn-primary me-1">
+                            ✏ Edit
+                        </a>
+                        <button class="btn btn-sm btn-secondary me-1"
+                                onclick="loadDocuments(@item.Id)">
+                            Documents
+                        </button>
+
+
+
+                        <form asp-action="Delete" asp-route-id="@item.Id"
+                              method="post" class="d-inline"
+                              onsubmit="return confirm('Are you sure you want to delete?');">
+                            <button type="submit" class="btn btn-sm btn-danger">
+                                 Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="modal fade" id="documentModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Student Documents</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body" id="documentModalBody">
+                <div class="text-center">
+                    <div class="spinner-border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadDocuments(userId) {
+        fetch('/User/GetDocuments?id=' + userId)
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('documentModalBody').innerHTML = html;
+                var modal = new bootstrap.Modal(document.getElementById('documentModal'));
+                modal.show();
+            });
+    }
+</script>

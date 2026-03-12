@@ -1,0 +1,36 @@
+﻿@model List<Form.Models.StudentDocumentViewModel>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning text-center">
+        No documents found
+    </div>
+}
+else
+{
+    <table class="table table-bordered align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Stream</th>
+                <th>Remark</th>
+                <th width="120">View</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var d in Model)
+            {
+                <tr>
+                    <td>@d.Stream</td>
+                    <td>@d.Remark</td>
+                    <td class="text-center">
+                        <a href="@d.FilePath"
+                           target="_blank"
+                           class="btn btn-sm btn-success">
+                             View
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

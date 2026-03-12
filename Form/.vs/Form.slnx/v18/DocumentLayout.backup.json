@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\views\\user\\_documentlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:views\\user\\_documentlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\models\\studentdocumentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:models\\studentdocumentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\models\\usereditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:models\\usereditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|e:\\dotnet\\mvc(model,view,controller)\\form\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D648AE4D-3E6F-B926-6229-610A31592E1B}|Form.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Edit.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAABoBAAAAAAAAAAAUwCYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T07:15:15.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Create.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAPAAAADAZGZmZmYqwAkBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-13T05:49:33.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AgIAACMAAACwzMzMzMxDwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T11:49:46.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAALoAAAAAMDMzMzMDwBsBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T08:15:12.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_DocumentListPartial.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\_DocumentListPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\_DocumentListPartial.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\_DocumentListPartial.cshtml",
+              "RelativeToolTip": "Views\\User\\_DocumentListPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-12T05:05:10.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentDocumentViewModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\StudentDocumentViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\StudentDocumentViewModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\StudentDocumentViewModel.cs",
+              "RelativeToolTip": "Models\\StudentDocumentViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T05:03:24.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Index.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-11T11:18:31.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserEditModel.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\UserEditModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserEditModel.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Models\\UserEditModel.cs",
+              "RelativeToolTip": "Models\\UserEditModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T06:30:35.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-07T16:45:05.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T13:16:15.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DotNet\\MVC(Model,View,Controller)\\Form\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:59:01.213Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

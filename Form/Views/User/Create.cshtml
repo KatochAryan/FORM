@@ -1,0 +1,298 @@
+﻿@model Form.Models.UserModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    main.pb-3 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .cardx {
+        border: 0.5px solid #4f4545;
+        width: 70%;
+        max-width: 1100px;
+        border-radius: 41px;
+        box-shadow: 14px 11px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button.btn.btn-success.btn-sm {
+        margin-bottom: 10px;
+        width: 58%;
+    }
+
+    .headers {
+        background: linear-gradient(90deg, #2388ff, #1b6edc);
+        color: white;
+        padding: 10px;
+        border-radius: 30px;
+    }
+</style>
+
+<div class="card p-4 cardx">
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success text-center mb-3">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+      
+
+        <h3 class="text-center mb-4 headers">Personal Details</h3>
+
+        <!-- First Name -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label asp-for="FirstName"></label>
+            </div>
+            <div class="col-9">
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label asp-for="LastName"></label>
+            </div>
+            <div class="col-9">
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- DOB -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label asp-for="Dob">D.O.B</label>
+            </div>
+            <div class="col-9">
+                <input asp-for="Dob" type="date" class="form-control" />
+                <span asp-validation-for="Dob" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label>Photo</label>
+            </div>
+            <div class="col-9">
+                <input asp-for="PhotoFile" type="file" class="form-control" />
+                <span asp-validation-for="PhotoFile" class="text-danger"></span>
+
+            </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label asp-for="Gender"></label>
+            </div>
+            <div class="col-9">
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" class="form-check-input" type="radio" value="Male" />
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" class="form-check-input" type="radio" value="Female" />
+                    <label class="form-check-label">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" class="form-check-input" type="radio" value="Other" />
+                    <label class="form-check-label">Other</label>
+                </div>
+                <br />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Category -->
+        <div class="row mb-3">
+            <div class="col-2">
+                <label asp-for="Category"></label>
+            </div>
+            <div class="col-6">
+                <select asp-for="Category" class="form-control">
+                    <option value="">-- Select Category --</option>
+                    <option>General</option>
+                    <option>OBC</option>
+                    <option>SC</option>
+                    <option>ST</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Status (FIXED) -->
+        <div class="row mb-4">
+            <div class="col-2">
+                <label asp-for="Status"></label>
+            </div>
+            <div class="col-4">
+                <div class="form-check form-switch">
+                    <input asp-for="Status" class="form-check-input" />
+                </div>
+
+            </div>
+        </div>
+
+
+        <h4 class="text-center mb-3 fw-bold">Qualifications</h4>
+
+        <table class="table table-bordered text-center" id="myTable">
+            <thead class="table-primary">
+                <tr>
+                    <th>Stream</th>
+                    <th>File</th>
+                    <th>Remark</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select name="Qualifications[0].Stream"
+                                class="form-control q-stream">
+                            <option value="">Select</option>
+                            <option>10th Marksheet</option>
+                            <option>12th Marksheet</option>
+                            <option>Graduation Certificate</option>
+                        </select>
+                        <span class="text-danger"
+                              asp-validation-for="Qualifications[0].Stream"></span>
+                    </td>
+
+                    <td>
+                        <input type="file"
+                               name="Qualifications[0].File"
+                               class="form-control q-file" />
+                        <span class="text-danger"
+                              asp-validation-for="Qualifications[0].File"></span>
+                    </td>
+
+                    <td>
+                        <input type="text"
+                               name="Qualifications[0].Remark"
+                               class="form-control q-remark" />
+                        <span class="text-danger"
+                              asp-validation-for="Qualifications[0].Remark"></span>
+                    </td>
+
+                    <td>
+                        <button type="button"
+                                class="btn btn-success btn-sm w-100"
+                                onclick="addRow()">
+                            ➕ Add
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary">Save Student</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        let rowIndex = 1;
+
+        function addRow() {
+            let table = document.querySelector("#myTable tbody");
+
+            table.insertAdjacentHTML("beforeend", `
+                <tr>
+                    <td>
+                        <select name="Qualifications[${rowIndex}].Stream"
+                                class="form-control q-stream">
+                            <option value="">Select</option>
+                            <option>10th Marksheet</option>
+                            <option>12th Marksheet</option>
+                            <option>Graduation Certificate</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="file"
+                               name="Qualifications[${rowIndex}].File"
+                               class="form-control q-file" />
+                    </td>
+
+                    <td>
+                        <input type="text"
+                               name="Qualifications[${rowIndex}].Remark"
+                               class="form-control q-remark" />
+                    </td>
+
+                    <td>
+                        <button type="button"
+                                class="btn btn-danger btn-sm w-100"
+                                onclick="this.closest('tr').remove()">
+                            ❌ Delete
+                        </button>
+                    </td>
+                </tr>
+            `);
+
+            rowIndex++;
+        }
+    </script>
+
+
+    <script>
+        $('form').on('submit', function (e) {
+
+            let qualificationValid = true;
+
+            $('.q-stream').each(function () {
+                if ($(this).val().trim() === '') {
+                    qualificationValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+
+            $('.q-remark').each(function () {
+                if ($(this).val().trim() === '') {
+                    qualificationValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+
+            $('.q-file').each(function () {
+                if (!this.files || this.files.length === 0) {
+                    qualificationValid = false;
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid');
+                }
+            });
+
+            // 🔥 THIS is the key line
+            if (!qualificationValid) {
+                e.preventDefault(); // STOP postback
+                return false;
+            }
+        });
+    </script>
+
+
+
+}
